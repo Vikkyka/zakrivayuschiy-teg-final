@@ -337,25 +337,25 @@ dialog::backdrop {
   opacity: 0.75;
 }
 
-.image-horizon {
+/* .image-horizon {
   transition: filter 2s ease;
-}
+} */
 
-.image-horizon:hover {
+.image-horizon/*:hover*/ {
   filter: saturate(160%);
-  transition: 2s ease;
+  /* transition: 2s ease; */
 }
 
-.image-kinder {
+/* .image-kinder {
   transition: filter 2s ease;
-}
+} */
 
-.image-kinder:hover {
+.image-kinder/*:hover*/ {
   filter: brightness(130%) sepia(20%);
-  transition: 2s ease;
+  /* transition: 2s ease; */
 }
 
-.image-happy:hover {
+.image-happy/*:hover*/ {
   animation: filter-image 3s linear infinite;
 }
 
@@ -365,32 +365,32 @@ dialog::backdrop {
   }
 }
 
-.image-shadow {
+/* .image-shadow {
   transition: filter 2s ease;
-}
+} */
 
-.image-shadow:hover {
+.image-shadow/*:hover*/ {
   filter: grayscale(1) blur(0.3rem);
-  transition: 2s ease;
+  /* transition: 2s ease; */
 }
 
-.image-peapls {
+/* .image-peapls {
   transition: filter 2s ease;
-}
+} */
 
-.image-peapls:hover {
+.image-peapls/*:hover*/ {
   filter: brightness(1.5) grayscale(1);
-  transition: 2s ease;
+  /* transition: 2s ease; */
 }
 
-.image-relax {
+/* .image-relax {
   transition: filter 2s ease, mix-blend-mode 2s ease;
-}
+} */
 
-.image-relax:hover {
+.image-relax/*:hover*/ {
   mix-blend-mode: luminosity;
   filter: invert(1) contrast(125%);
-  transition: 2s ease;
+  /* transition: 2s ease; */
 }
 
 .image-penguin {
@@ -424,14 +424,13 @@ dialog::backdrop {
   transition: 5s ease;
 }
 
-.image-mountains {
-  transition: filter 2s ease;
-  
-}
+/* .image-mountains {
+  transition: filter 2s ease; 
+} */
 
-.image-mountains:hover {
+.image-mountains/*:hover*/ {
   filter: brightness(130%) saturate(107%);
-  transition: 2s ease;
+  /* transition: 2s ease; */
 }
 
 @media (width <= 375px) {
