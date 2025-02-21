@@ -24,12 +24,12 @@
   justify-items: center;
   /* background-image: var(--bg-image); */
   /* background-repeat: repeat;
-  background-attachment: fixed;
   background-size: 4px 4px; */
   background-image: repeating-linear-gradient(180deg, var(--bg-line), var(--bg-line) 2px, transparent 2px, transparent 4px),
   repeating-linear-gradient(90deg, var(--bg-line), var(--bg-line) 2px, transparent 2px, transparent 4px),
   linear-gradient(var(--bg-colour-top), var(--bg-colour-bottom));
   background-size: auto, auto, cover;
+  background-attachment: fixed;
 }
 
 button {
@@ -329,7 +329,8 @@ dialog[open] {
 }
 
 .button-text-close {
-  margin: 10.5px 125px;
+  padding: 11.5px 125px;
+  display: block;
 }
 
 dialog::backdrop {
@@ -337,25 +338,25 @@ dialog::backdrop {
   opacity: 0.75;
 }
 
-/* .image-horizon {
+/* .filter-saturate {
   transition: filter 2s ease;
 } */
 
-.image-horizon/*:hover*/ {
+.filter-saturate/*:hover*/ {
   filter: saturate(160%);
   /* transition: 2s ease; */
 }
 
-/* .image-kinder {
+/* .filter-brightness-sepia {
   transition: filter 2s ease;
 } */
 
-.image-kinder/*:hover*/ {
+.filter-brightness-sepia/*:hover*/ {
   filter: brightness(130%) sepia(20%);
   /* transition: 2s ease; */
 }
 
-.image-happy/*:hover*/ {
+.filter-hue-rotate/*:hover*/ {
   animation: filter-image 3s linear infinite;
 }
 
@@ -365,35 +366,35 @@ dialog::backdrop {
   }
 }
 
-/* .image-shadow {
+/* .filter-grayscale-blur {
   transition: filter 2s ease;
 } */
 
-.image-shadow/*:hover*/ {
+.filter-grayscale-blur/*:hover*/ {
   filter: grayscale(1) blur(0.3rem);
   /* transition: 2s ease; */
 }
 
-/* .image-peapls {
+/* .filter-brightness-grayscale {
   transition: filter 2s ease;
 } */
 
-.image-peapls/*:hover*/ {
+.filter-brightness-grayscale/*:hover*/ {
   filter: brightness(1.5) grayscale(1);
   /* transition: 2s ease; */
 }
 
-/* .image-relax {
+/* .filter-invert-contrast {
   transition: filter 2s ease, mix-blend-mode 2s ease;
 } */
 
-.image-relax/*:hover*/ {
+.filter-invert-contrast/*:hover*/ {
   mix-blend-mode: luminosity;
   filter: invert(1) contrast(125%);
   /* transition: 2s ease; */
 }
 
-.image-penguin {
+.filter-opacity {
   position: relative;
   transition: filter 5s ease;
 }
@@ -419,16 +420,16 @@ dialog::backdrop {
   visibility: visible;
 }
 
-.image-penguin:hover {
+.filter-opacity:hover {
   filter: opacity(0.2);
   transition: 5s ease;
 }
 
-/* .image-mountains {
+/* .filter-brightness-saturate {
   transition: filter 2s ease; 
 } */
 
-.image-mountains/*:hover*/ {
+.filter-brightness-saturate/*:hover*/ {
   filter: brightness(130%) saturate(107%);
   /* transition: 2s ease; */
 }
@@ -441,13 +442,18 @@ dialog::backdrop {
     width: calc(100% + 5%);
   }
   .button-text-close {
-    margin: 10.5px 110px;
+    padding: 10.5px 110px;
+    display: block;
   }
   .button-save-icon {
-    inline-size: 28px;
+    width: 28px;
+    height: 28px;
+    margin-top: 14px;
   }
-  .button-save-wrapper {
+  .button-save {
     flex-direction: column;
-    gap: 8px;
+  }
+  .button-text-save {
+    margin: 0 10px 15px 14px;
   }
 }
